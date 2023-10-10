@@ -1,7 +1,6 @@
 package com.example.ems.controller;
 
 import com.example.ems.dto.EmployeeDto;
-import com.example.ems.entity.Employee;
 import com.example.ems.service.EmployeeService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -10,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin("*")
 @AllArgsConstructor
 @RestController
 @RequestMapping("/api/employees")
